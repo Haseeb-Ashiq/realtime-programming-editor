@@ -6,7 +6,7 @@ const ACTIONS = require('./src/Actions');
 const path = require('path');
 const server=http.createServer(app);
 require('dotenv').config();
-const PORT=process.env.REACT_APP_URL || 5000;
+const PORT=process.env.PORT || 5000;
 
 app.use(express.static('build'));
 app.use((req,res,next)=>{
