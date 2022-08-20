@@ -6,6 +6,8 @@ const ACTIONS = require('./src/Actions');
 const path = require('path');
 const server=http.createServer(app);
 
+const PORT=process.env.REACT_APP_URL || 5000;
+
 app.use(express.static('build'));
 app.use((req,res,next)=>{
 res.sendFile(path.join(__dirname,'build','index.html'));
@@ -62,6 +64,6 @@ io.on('connection',(socket)=>{
     })
 })
 
-server.listen(process.env.PORT || 5000,()=>{
+server.listen(PORT,()=>{
     console.log('server running')
 })
