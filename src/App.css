@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+.login-container{
+  min-height: 90vh;
+  max-width:90vw;
+  /* border:1px solid black; */
+  margin:30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.login-container .login-window{
+  height:50vh;
+  width: 40vw;
+  border:1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-inner-container{
+  height:90%;
+  width:90%;
+  /* border:1px solid black; */
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  /* margin:10px auto; */
+}
+.login-inner-container .input-group{
+  height:70%;
+  width:95%;
+  /* border:1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.input-group input{
+  margin:10px 10px;
+  width:90%;
+  height:50px;
+}
+.input-group .btn-group{
+  height:30px;
+  width:94%;
+  display: flex;
+}
+.btn-group button{
+  height:100%;
+  width:100%;
+  margin:0 5px;
+  background-color: #4aed84;
+  border:none;
+  outline: none;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
-}
+/* editor codding */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mainWrapper{
+  min-height:100vh;
+  max-width:100vw;
+  border:1px solid black;
+  display: grid;
+  grid-template-columns: 230px 1fr;
+}
+.aside{
+  background-color: #1c1e29;
+  color:#fff;
+  padding:16px;
+  display: flex;
+  flex-direction: column;
+}
+.aside .asideInner{
+  flex:1;
+}
+.clientsList{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap:20px;
+}
+.clientsList .client{
+  display: flex;
+  flex-direction: column;
 }
